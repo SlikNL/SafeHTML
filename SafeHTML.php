@@ -15,13 +15,6 @@
  * @link       http://pixel-apes.com/safehtml/
  */
 
-
-/**
- * This package requires HTMLSax3 package
- */
-require_once(XML_HTMLSAX3 . 'HTMLSax3.php');
-
- 
 /**
  *
  * SafeHTML Parser

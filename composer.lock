@@ -1,0 +1,51 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "4623c1525eec19a6027db4c7e48ace90",
+    "packages": [
+        {
+            "name": "pear-pear.php.net/XML_HTMLSax3",
+            "version": "3.0.0",
+            "dist": {
+                "type": "file",
+                "url": "http://pear.php.net/get/XML_HTMLSax3-3.0.0.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "php": ">=4.0.5.0"
+            },
+            "replace": {
+                "pear-pear/xml_htmlsax3": "== 3.0.0.0"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "description": "XML_HTMLSax3 is a SAX based XML parser for badly formed XML documents, such as HTML.\n  The original code base was developed by Alexander Zhukov and published at http://sourceforge.net/projects/phpshelve/. Alexander kindly gave permission to modify the code and license for inclusion in PEAR.\n\n  NOTE!\n  This package is now dual licensed under PHP license v3.01 and LGPL 3.0\n  See the CVS repo link for the actual licenses\n\n  PEAR::XML_HTMLSax3 provides an API very similar to the native PHP XML extension (http://www.php.net/xml), allowing handlers using one to be easily adapted to the other. The key difference is HTMLSax will not break on badly formed XML, allowing it to be used for parsing HTML documents. Otherwise HTMLSax supports all the handlers available from Expat except namespace and external entity handlers. Provides methods for handling XML escapes as well as JSP/ASP opening and close tags.\n\n  Version 1.x introduced an API similar to the native SAX extension but used a slow character by character approach to parsing.\n\n  Version 2.x has had it's internals completely overhauled to use a Lexer, delivering performance *approaching* that of the native XML extension, as well as a radically improved, modular design that makes adding further functionality easy.\n\n  Version 3.x is about fine tuning the API, behaviour and providing a mechanism to distinguish HTML \"quirks\" from badly formed HTML (later functionality not yet implemented)\n\n  A big thanks to Jeff Moore (lead developer of WACT: http://wact.sourceforge.net) who's largely responsible for new design, as well input from other members at Sitepoint's Advanced PHP forums: http://www.sitepointforums.com/showthread.php?threadid=121246.\n\n  Thanks also to Marcus Baker (lead developer of SimpleTest: http://www.lastcraft.com/simple_test.php) for sorting out the unit tests."
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "authors": [
+        {
+            "name": "Roman Ivanov",
+            "email": "thingol@mail.ru"
+        }
+    ],
+    "autoload": {
+        "classmap": ["SafeHTML.php"]
+    },
+    "homepage": "https://github.com/SlikNL/SafeHTML",
+    "keywords": [
+        "html"
+    ],
+    "license": "BSD-3-Clause",
+    "name": "slik/SafeHTML",
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear.php.net/"
+        }
+    ],
+    "require": {
+        "pear-pear.php.net/XML_HTMLSax3": "*"
+    }
+}
