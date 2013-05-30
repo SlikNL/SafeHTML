@@ -123,6 +123,17 @@ class SafeHTML
     var $_cssRegexps = array();
 
     /**
+     * Should we perform UTF7 repacking or not?
+     *
+     * This repacking might replace completely normal strings such as "+31-" by illegal sequences,
+     * which cause the document to be truncated on saving to MySQL
+     *
+     * @var boolean
+     * @access public
+     */
+    var $repackUTF7 = true;
+
+    /**
      * List of single tags ("<tag />")
      *
      * @var array
@@ -592,9 +603,11 @@ class SafeHTML
 
        // Opera6 bug workaround
        $doc = str_replace("\xC0\xBC", '&lt;', $doc);
-       
-       // UTF-7 encoding ASCII decode
-       $doc = $this->repackUTF7($doc);
+
+       if ($this->repackUTF7) {
+           // UTF-7 encoding ASCII decode
+           $doc = $this->repackUTF7($doc);
+       }
 
        // Instantiate the parser
        $parser=& new XML_HTMLSax3();
