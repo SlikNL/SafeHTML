@@ -13,7 +13,7 @@
         "html"
     ],
     "license": "BSD-3-Clause",
-    "name": "slik/SafeHTML",
+    "name": "slik/safehtml",
     "repositories": [
         {
             "type": "pear",
